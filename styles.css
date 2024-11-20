@@ -1,0 +1,370 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Font Face Declaration */
+@font-face {
+    font-family: "My Custom Font";
+    src: url("fonts/Between\ 3\ W01\ Heavy.ttf");
+}
+
+/* Body & Global Styles */
+body {
+    background-color: white;
+    color: #262626;
+    font-family: 'My Custom Font', Verdana, Geneva, Tahoma, sans-serif;
+}
+
+/* Header */
+header {
+    background-color: #fff;
+    padding: 20px 0;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.navbar .logo {
+    font-size: 1.8em;
+    font-weight: bold;
+    color: #262626;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+}
+
+.nav-links li {
+    margin: 0 15px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #262626;
+    padding: 5px 10px;
+    transition: all 0.3s ease;
+    border-radius: 5px;
+}
+
+.nav-links a:hover {
+    background-color: #262626;
+    color: #fff;
+}
+
+/* Main Content */
+main {
+    padding: 40px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.section {
+    margin-bottom: 40px;
+}
+
+h1, h2 {
+    font-size: 2.2em;
+    margin-bottom: 20px;
+    color: #262626;
+}
+
+p {
+    font-size: 1.1em;
+    line-height: 1.6;
+    color: #333;
+}
+
+ul {
+    list-style: none;
+    padding: 10px;
+}
+
+ul li {
+    margin-bottom: 10px;
+}
+
+/* Image Styling */
+img.rounded {
+    border-radius: 15px;
+    width: 100%;
+    max-width: 500px;
+    margin: 20px 0;
+    display: block;
+}
+
+/* Image Styling */
+img.rounded1 {
+    border-radius: 15px;
+    width: 100%;
+    max-width: 500px;
+    margin: 40px 0;
+    display: block;
+}
+
+/* Footer */
+footer {
+    background-color: #f1f1f1;
+    padding: 20px 0;
+    text-align: center;
+    font-size: 1em;
+    color: #333;
+}
+
+/* Section-specific Styles */
+#home, #bezienswaardigheden, #openbaar-vervoer, #ambities, #rijkswaterstaat {
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+}
+
+/* Random Info (Add images or content here) */
+.random-info {
+    background-color: #e2e2e2;
+    padding: 20px;
+    margin-top: 30px;
+    border-radius: 8px;
+}
+
+/* Styling for the heading inside .random-info */
+.random-info h3 {
+    font-size: 1.5em;
+    color: #262626;
+    font-weight: normal; /* Explicitly set the heading font weight */
+}
+
+/* Styling for the paragraph inside .random-info */
+.random-info p {
+    font-size: 1.1em;
+    color: #333;
+    font-weight: normal; /* Explicitly set the paragraph font weight */
+}
+
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .nav-links {
+        display: block;
+        text-align: center;
+    }
+    
+    .nav-links li {
+        margin: 10px 0;
+    }
+    
+    main {
+        padding: 20px;
+    }
+}
+
+.bus-line {
+    margin-bottom: 20px;
+}
+
+.bus-line h3 {
+    margin-bottom: 10px;
+    font-size: 1.5rem;
+}
+
+.route {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.stop {
+    display: flex;
+    align-items: center;
+    margin: 8px 0;
+}
+
+.dot {
+    height: 10px;
+    width: 10px;
+    background-color: #7B00B5;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.stop-name {
+    font-size: 1rem;
+}
+
+.navigation-buttons {
+    display: flex;
+    justify-content: flex-start; /* Aligns buttons to the left */
+    margin-top: 20px;
+    gap: 10px; /* Spacing between buttons */
+}
+
+.navigation-buttons button {
+    font-size: 1.1em; /* Matches paragraph font size */
+    color: white; /* White text for contrast */
+    background-color: #262626; /* Button background color */
+    border: none; /* Removes border for a clean look */
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Smooth transition for hover effect */
+}
+
+.navigation-buttons button:hover {
+    background-color: black; /* Changes to black on hover */
+}
+
+/* Default button styles */
+.hattenlo-buttons button:nth-child(1) {
+    background-color: #7B00B5; /* Default: Purple */
+    color: white;
+}
+
+.hattenlo-buttons button:nth-child(2) {
+    background-color: #F98E3C; /* Default: Orange */
+    color: white;
+}
+
+.hattenlo-buttons button:nth-child(3) {
+    background-color: #007DCA; /* Default: Blue */
+    color: white;
+}
+
+.hattenlo-buttons button:nth-child(4) {
+    background-color: #FF1B1F; /* Default: Red */
+    color: white;
+}
+
+.hattenlo-buttons button:nth-child(5) {
+    background-color: #008D10; /* Default: Green */
+    color: white;
+}
+
+.hattenlo-buttons button:nth-child(6) {
+    background-color: #00BFC5; /* Default: Cyan */
+    color: white;
+}
+
+.hattenlo-buttons button:nth-child(7) {
+    background-color: #D2A800; /* Default: Yellow */
+    color: white;
+}
+
+.hattenlo-buttons button:nth-child(8) {
+    background-color: #000DC2; /* Default: Blue */
+    color: white;
+}
+
+.heerswoude-buttons button {
+    background-color: #000DC2; /* Default: Blue */
+    color: white;
+}
+
+.heerswoude-buttons button:nth-child(1) {
+    background-color: #98007f;
+}
+
+.heerswoude-buttons button:nth-child(2) {
+    background-color: #ffb93f;
+}
+
+.heerswoude-buttons button:nth-child(3) {
+    background-color: #016caa;
+}
+
+/* Hover styles: turn to #262626 */
+.hattenlo-buttons button:hover {
+    background-color: #262626; /* Hover: Dark gray */
+    color: white; /* Keep the text white */
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+/* Hover styles: turn to #262626 */
+.heerswoude-buttons button:hover {
+    background-color: #262626; /* Hover: Dark gray */
+    color: white; /* Keep the text white */
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+/* Hover styles: turn to #262626 */
+.hattenlo-buttons button:hover {
+    background-color: #262626; /* Hover: Dark gray */
+    color: white; /* Keep the text white */
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.streekbussen-buttons button:hover {
+    background-color: #262626 !important; /* Force hover color change */
+    color: white; /* Keep the text white */
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+
+/* Optional: Add hover effects like slight scaling */
+.hattenlo-buttons button:hover {
+    transform: scale(1.05); /* Slightly enlarges on hover */
+}
+
+/* Optional: Add hover effects like slight scaling */
+.heerswoude-buttons button:hover {
+    transform: scale(1.05); /* Slightly enlarges on hover */
+}
+
+/* Optional: Add hover effects like slight scaling */
+.streekbussen-buttons button:hover {
+    transform: scale(1.05); /* Slightly enlarges on hover */
+}
+
+
+/* 60s buttons (1, 2, 3, 4, 5, 6) */
+.streekbussen-buttons button:nth-child(1),
+.streekbussen-buttons button:nth-child(2)
+{
+    background-color: #f700ff; /* Color for 60s */
+}
+
+/* 70s buttons (7, 8, 9, 10, 11, 12) */
+.streekbussen-buttons button:nth-child(3),
+.streekbussen-buttons button:nth-child(4)
+{
+    background-color: #00ccff; /* Color for 70s */
+}
+
+/* 80s buttons (13, 14, 15, 16, 17, 18) */
+.streekbussen-buttons button:nth-child(5),
+.streekbussen-buttons button:nth-child(6),
+.streekbussen-buttons button:nth-child(7) {
+    background-color: #ff5100; /* Color for 80s */
+}
+
+/* 90s buttons (19, 20, 21, 22, 23, 24) */
+.streekbussen-buttons button:nth-child(8),
+.streekbussen-buttons button:nth-child(9),
+.streekbussen-buttons button:nth-child(10),
+.streekbussen-buttons button:nth-child(11),
+.streekbussen-buttons button:nth-child(12) {
+    background-color: #5ec900; /* Color for 90s */
+}
+
+.comfort-buttons button {
+    background: linear-gradient(90deg, #4f287b, #0086d6, #00965e); /* Default gradient */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background 1s ease, transform 0.3s ease;
+}
+
+.comfort-buttons button:hover {
+    background-color: #262626; /* Solid color on hover */
+    color: white; /* Keep the text white */
+    transform: scale(1.05); /* Slightly increase button size on hover */
+}
