@@ -43,6 +43,8 @@ header {
 .nav-links {
     list-style: none;
     display: flex;
+    flex-wrap: wrap; /* Ensure items wrap on smaller screens */
+    justify-content: center; /* Center items for better alignment */
 }
 
 .nav-links li {
@@ -67,6 +69,9 @@ main {
     padding: 40px 20px;
     max-width: 1200px;
     margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center content horizontally */
 }
 
 .section {
@@ -155,8 +160,9 @@ footer {
 /* Responsive Design */
 @media (max-width: 768px) {
     .nav-links {
-        display: block;
-        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
     
     .nav-links li {
@@ -165,6 +171,10 @@ footer {
     
     main {
         padding: 20px;
+    }
+    
+    .navigation-buttons {
+        justify-content: center; /* Center buttons on smaller screens */
     }
 }
 
@@ -203,7 +213,8 @@ footer {
 
 .navigation-buttons {
     display: flex;
-    justify-content: flex-start; /* Aligns buttons to the left */
+    justify-content: center; /* Center buttons for better alignment */
+    flex-wrap: wrap; /* Allow buttons to wrap on smaller screens */
     margin-top: 20px;
     gap: 10px; /* Spacing between buttons */
 }
